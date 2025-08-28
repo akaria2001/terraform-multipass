@@ -13,19 +13,19 @@ variable "image" {
 variable "cpus" {
   description = "vCPU count"
   type        = number
-  default     = 2
+  default     = 4
 }
 
 variable "memory" {
   description = "RAM size (e.g., 2G, 4096M)"
   type        = string
-  default     = "2G"
+  default     = "4G"
 }
 
 variable "disk" {
   description = "Disk size (e.g., 30G)"
   type        = string
-  default     = "30G"
+  default     = "60G"
 }
 
 variable "cloud_init" {
