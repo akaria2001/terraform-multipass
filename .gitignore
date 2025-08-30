@@ -4,3 +4,6 @@ terraform.tfstate.backup
 *.tfstate
 *.tfstate.backup
 .terraform/
+.terraform.lock.hcl
+terraform.tfvars          # (if sensitive; otherwise commit a terraform.tfvars.example)
+tfplan
