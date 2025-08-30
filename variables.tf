@@ -1,36 +1,35 @@
-variable "vm_name" {
-  description = "Multipass instance name"
-  type        = string
-  default     = "tf-demo"
+variable "vm_names" {
+  description = "Names of the VMs to create"
+  type        = list(string)
+  default     = ["tf-node1", "tf-node2"]
 }
 
-variable "image" {
-  description = "Ubuntu image alias (e.g., 22.04, 24.04)"
+variable "vm_image" {
+  description = "Ubuntu release to use"
   type        = string
   default     = "24.04"
 }
 
-variable "cpus" {
-  description = "vCPU count"
+variable "vm_cpus" {
+  description = "Number of CPUs per VM"
   type        = number
-  default     = 4
+  default     = 2
 }
 
-variable "memory" {
-  description = "RAM size (e.g., 2G, 4096M)"
+variable "vm_memory" {
+  description = "RAM per VM"
   type        = string
-  default     = "4G"
+  default     = "2G"
 }
 
-variable "disk" {
-  description = "Disk size (e.g., 30G)"
+variable "vm_disk" {
+  description = "Disk size per VM"
   type        = string
-  default     = "60G"
+  default     = "20G"
 }
 
-variable "cloud_init" {
-  description = "Path to cloud-init file"
+variable "cloud_init_file" {
+  description = "Cloud-init configuration file"
   type        = string
   default     = "cloud-init.yaml"
 }
-

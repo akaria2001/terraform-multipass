@@ -1,20 +1,7 @@
 #cloud-config
-# This file is used by cloud-init to configure the VM on first boot.
+
 packages:
   - nginx
-
-write_files:
-  - path: /var/www/html/index.html
-    permissions: "0644"
-    content: |
-      <!doctype html>
-      <html>
-      <head><meta charset="utf-8"><title>Multipass + Terraform</title></head>
-      <body style="font-family: system-ui;">
-        <h1>It works 🎉</h1>
-        <p>This VM was launched by Terraform and provisioned by cloud-init.</p>
-      </body>
-      </html>
 
 runcmd:
   - systemctl enable nginx

@@ -1,22 +1,25 @@
 # This file is maintained automatically by "terraform init".
 # Manual edits may be lost in future updates.
 
-provider "registry.terraform.io/hashicorp/null" {
-  version     = "3.2.4"
-  constraints = "~> 3.2"
+provider "registry.terraform.io/larstobi/multipass" {
+  version     = "1.4.2"
+  constraints = ">= 0.2.2"
   hashes = [
-    "h1:L5V05xwp/Gto1leRryuesxjMfgZwjb7oool4WS1UEFQ=",
-    "zh:59f6b52ab4ff35739647f9509ee6d93d7c032985d9f8c6237d1f8a59471bbbe2",
-    "zh:78d5eefdd9e494defcb3c68d282b8f96630502cac21d1ea161f53cfe9bb483b3",
-    "zh:795c897119ff082133150121d39ff26cb5f89a730a2c8c26f3a9c1abf81a9c43",
-    "zh:7b9c7b16f118fbc2b05a983817b8ce2f86df125857966ad356353baf4bff5c0a",
-    "zh:85e33ab43e0e1726e5f97a874b8e24820b6565ff8076523cc2922ba671492991",
-    "zh:9d32ac3619cfc93eb3c4f423492a8e0f79db05fec58e449dee9b2d5873d5f69f",
-    "zh:9e15c3c9dd8e0d1e3731841d44c34571b6c97f5b95e8296a45318b94e5287a6e",
-    "zh:b4c2ab35d1b7696c30b64bf2c0f3a62329107bd1a9121ce70683dec58af19615",
-    "zh:c43723e8cc65bcdf5e0c92581dcbbdcbdcf18b8d2037406a5f2033b1e22de442",
-    "zh:ceb5495d9c31bfb299d246ab333f08c7fb0d67a4f82681fbf47f2a21c3e11ab5",
-    "zh:e171026b3659305c558d9804062762d168f50ba02b88b231d20ec99578a6233f",
-    "zh:ed0fe2acdb61330b01841fa790be00ec6beaac91d41f311fb8254f74eb6a711f",
+    "h1:JWxv7FKmCycQVZ2JUL6B3HCuxtSyAMyNNCGaw2bhbv4=",
+    "zh:3369ef7d1dc5fb99460c3d60e7c040eb04572b364267ed93279c0a37e13a95f6",
+    "zh:3ed30df33e15becc3c85b78ec608d9a4bcda65084dca2c4f9ab547ca44f7d2e4",
+    "zh:55d1cf44079a0eead0a57f61bb0516f97a528fe831d2d2c334e1747bb2f4a673",
+    "zh:5950b389be45aa6d5cf89bd0cd33107427e142db57322210495266f6b5227f72",
+    "zh:90cbf7fe6c0d53246716e55481c628a23abc015e796f267c2f99a38b1ba917a1",
+    "zh:afac3fe5e97927f3d7ec612f939371011956e4fcd702615431d50b9d3f4ae9a1",
+    "zh:bc96fa976d942bf3e7fb8dd37129a2b3fe5e58afce9318d8d4eb0d325b7188ae",
+    "zh:bef907997cefe68323309fd4f89519963368f0d74544cb868ebd240f40e34716",
+    "zh:c58efccb2c1354adfbd4426d2f9cfa2c67201509a9f470211b548d1519158b29",
+    "zh:d1b5677571ab15f5eec354b89503aabd94e092bcce201dfb06077f7592eb380a",
+    "zh:d36c029e40b508fc951c9d38d2578ddc254a8ba137111f4f3073d08be2041c72",
+    "zh:dd1d97c71a22455a05332ba993f51b1125fcfb624178c381a0ba4dc10c47586d",
+    "zh:e0e37d5fe209f31c5619106968992f1aec8155d44f5f05ec75ab5f78cd64b4a4",
+    "zh:e997f089d5b0f6ab8748340bf4ba35902a8a3c290098a1b53bdbc9b670e1084e",
+    "zh:f809ab383cca0a5f83072981c64208cbd7fa67e986a86ee02dd2c82333221e32",
   ]
 }
