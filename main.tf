@@ -19,3 +19,17 @@ resource "multipass_instance" "vm" {
   disk           = var.vm_disk
   cloudinit_file = var.cloud_init_file
 }
+
+# Run updates automatically after each VM is created
+resource "null_resource" "update_vms" {
+  for_each = toset(var.vm_names)
+
+  depends_on = [multipass_instance.vm]
+
+  provisioner "local-exec" {
+    command = <<EOT
+      multipass exec ${each.key} -- sudo apt-get update -y
+      multipass exec ${each.key} -- sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
+    EOT
+  }
+}

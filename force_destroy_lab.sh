@@ -1,0 +1,1 @@
+for f in $(multipass ls | grep -e tf | cut -d ' ' -f 1) ; do multipass delete $f --purge ; done
